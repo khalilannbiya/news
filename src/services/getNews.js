@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const NEWS_API_BASE_URL = process.env.REACT_APP_NEWS_API_BASE_URL;
-const NEWS_API_KEY = process.env.REACT_APP_API_KEY;
+const NEWS_API_BASE_URL = import.meta.env.VITE_REACT_APP_NEWS_API_BASE_URL;
+const NEWS_API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
 
 const getNews = async ({ searchQuery = "technology" }) => {
    try {
@@ -26,3 +26,5 @@ const getNews = async ({ searchQuery = "technology" }) => {
       console.error("Error getting Tech News:", error);
    }
 };
+
+export { getNews };
