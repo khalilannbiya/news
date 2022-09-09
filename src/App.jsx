@@ -1,7 +1,15 @@
 import React from "react";
+import { Container, Navbar, Error, Loading } from "./components";
 
 const App = () => {
-   return <div>App</div>;
+   return (
+      <>
+         <Navbar />
+         <Container>
+            <h1>hello</h1>
+         </Container>
+      </>
+   );
 };
 
 export default App;
