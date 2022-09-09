@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Container, Navbar, Error, Loading } from "./components";
+import { Container, Navbar, Error, Loading, NewsList } from "./components";
 
 import { getNews } from "./services/getNews";
 
@@ -29,13 +29,14 @@ const App = () => {
       fetchTechNews();
    }, []);
 
+   console.log(articles);
    return (
       <>
          <Navbar />
          <Container>
             {loading && <Loading />}
             {error && <Error />}
-            {!loading && articles.length > 0 && <h1>hello, articles</h1>}
+            {!loading && articles.length > 0 && <NewsList articles={articles} />}
          </Container>
       </>
    );
