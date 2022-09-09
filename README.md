@@ -35,17 +35,17 @@ Project News App with React for learning
 - To run this project, you will need to add the following environment variables to your .env file
 
 ```bash
-  REACT_APP_NEWS_API_BASE_URL = https://newsapi.org/v2
-  REACT_APP_API_KEY = your_api_key
+  VITE_REACT_APP_NEWS_API_BASE_URL = https://newsapi.org/v2
+  VITE_REACT_APP_API_KEY = your_api_key
 ```
 
 - Then you must get the API KEY at [News API](https://newsapi.org/docs/get-started)
 
-- When you has get API KEY, copy paste at `REACT_APP_API_KEY`
+- When you has get API KEY, copy paste at `VITE_REACT_APP_API_KEY`
 ```bash
 Example:
-  REACT_APP_NEWS_API_BASE_URL = https://newsapi.org/v2
-  REACT_APP_API_KEY = 08s54trrasdjjakjhk89dijd9
+  VITE_REACT_APP_NEWS_API_BASE_URL = https://newsapi.org/v2
+  VITE_REACT_APP_API_KEY = 08s54trrasdjjakjhk89dijd9
 ```
 
 - Install Package with yarn
