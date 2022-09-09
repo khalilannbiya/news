@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./NewsCard.module.css";
+import { formatDate } from "../../utils/formatDate";
 
 const NewsCard = ({ src, title, publishedAt, author, sourceName, description, url, notLastChild }) => {
    return (
@@ -17,7 +18,7 @@ const NewsCard = ({ src, title, publishedAt, author, sourceName, description, ur
             </div>
 
             <div className={styles.newsCardContent}>
-               <p className={styles.newsCardDate}>{publishedAt}</p>
+               <p className={styles.newsCardDate}>{formatDate(publishedAt)}</p>
                <p className={styles.newsCardAuthor}>{`${author} | ${sourceName}`}</p>
                <p className={styles.newsCardDesc}>{description}</p>
                <a className={styles.url} href={url} target="_blank" rel="noreferrer noopener">
