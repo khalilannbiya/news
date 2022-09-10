@@ -3,7 +3,7 @@
 Project News App with React for learning
 ## Demo
 
-[Demo](https://khalilannbiya.github.io/personal-notes/)
+[Demo](https://khalilannbiya.github.io/news/)
 
 
 ## Tech Stack
