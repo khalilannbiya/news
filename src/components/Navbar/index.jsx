@@ -18,7 +18,7 @@ const Navbar = () => {
                return (
                   <Link
                      key={index}
-                     to={`/news/${category.slug}`}
+                     to={`/${category.slug}`}
                      onClick={() => setSelected(category.name)}
                      className={classNames(styles.category, {
                         [styles.selected]: selected === category.name,
