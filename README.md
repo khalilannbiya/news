@@ -69,11 +69,8 @@ Example:
 
 ## Features
 
-- Add Note
-- Delete Note
-- Archive Note
-- Search Note
-- You can know the word limit in entering the title
+- Get News
+- Search by Category
 
 
 ## Feedback
